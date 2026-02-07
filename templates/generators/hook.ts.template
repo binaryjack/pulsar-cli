@@ -1,0 +1,9 @@
+import { createSignal, createEffect } from '@pulsar-framework/pulsar.dev';
+
+export const use{{HOOK_NAME}} = function use{{HOOK_NAME}}() {
+  // Add hook logic here
+  
+  return {
+    // Return hook interface
+  };
+};

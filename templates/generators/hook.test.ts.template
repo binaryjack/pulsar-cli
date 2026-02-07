@@ -1,0 +1,9 @@
+import { describe, it, expect } from 'vitest';
+import { use{{HOOK_NAME}} } from './{{HOOK_FILE}}';
+
+describe('use{{HOOK_NAME}}', () => {
+  it('should work', () => {
+    // Add tests here
+    expect(true).toBe(true);
+  });
+});

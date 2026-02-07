@@ -1,0 +1,27 @@
+# {{APP_NAME}}
+
+A Pulsar Framework application.
+
+## Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+
+# Run tests
+npm test
+```
+
+## Learn More
+
+- [Pulsar Documentation](https://github.com/pulsarframework/pulsar.dev)
+- [Vite Documentation](https://vitejs.dev/)

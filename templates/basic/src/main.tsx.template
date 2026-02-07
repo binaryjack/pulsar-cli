@@ -1,0 +1,29 @@
+import { AppContextProvider, bootstrapApp } from '@pulsar-framework/pulsar.dev';
+import { App } from './App';
+
+// Create application root with lifecycle hooks
+const appRoot = bootstrapApp()
+  .root('#app')
+  .onMount((element) => {
+    console.log('[{{APP_NAME}}] Mounted successfully', element);
+  })
+  .onError((error) => {
+    console.error('[{{APP_NAME}}] Error:', error);
+  })
+  .build();
+
+// Wrap application with context provider and mount
+const app = (
+  <AppContextProvider
+    root={appRoot}
+    context={{
+      appName: '{{APP_NAME}}',
+      version: '1.0.0',
+    }}
+  >
+    <App />
+  </AppContextProvider>
+);
+
+// Append to DOM (AppContextProvider handles root.mount() internally)
+document.getElementById('app')?.appendChild(app);

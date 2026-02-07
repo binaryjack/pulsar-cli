@@ -1,0 +1,17 @@
+import { createContext, useContext } from '@pulsar-framework/pulsar.dev';
+
+export interface {{CONTEXT_NAME}}Value {
+  // Add context properties here
+}
+
+const {{CONTEXT_NAME}} = createContext<{{CONTEXT_NAME}}Value>();
+
+export const use{{CONTEXT_NAME}} = () => {
+  const context = useContext({{CONTEXT_NAME}});
+  if (!context) {
+    throw new Error('use{{CONTEXT_NAME}} must be used within a {{CONTEXT_NAME}}Provider');
+  }
+  return context;
+};
+
+export const {{CONTEXT_NAME}}Provider = {{CONTEXT_NAME}}.Provider;

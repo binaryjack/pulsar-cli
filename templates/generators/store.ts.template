@@ -1,0 +1,16 @@
+import { createStore } from '@pulsar-framework/pulsar.dev';
+
+export interface {{STORE_NAME}}State {
+  // Add state properties here
+}
+
+const initialState: {{STORE_NAME}}State = {
+  // Initialize state
+};
+
+export const {{STORE_NAME_LOWER}} = createStore(initialState);
+
+// Actions
+export const actions = {
+  // Add actions here
+};

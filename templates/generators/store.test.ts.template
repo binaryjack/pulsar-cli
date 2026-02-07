@@ -1,0 +1,8 @@
+import { describe, it, expect } from 'vitest';
+import { {{STORE_NAME_LOWER}}, actions } from './{{STORE_FILE}}';
+
+describe('{{STORE_NAME}}', () => {
+  it('should have initial state', () => {
+    expect({{STORE_NAME_LOWER}}.get()).toBeDefined();
+  });
+});

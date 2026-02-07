@@ -1,0 +1,13 @@
+import { createResource } from '@pulsar-framework/pulsar.dev';
+
+export interface {{RESOURCE_NAME}}Data {
+  // Add data properties here
+}
+
+const fetch{{RESOURCE_NAME}} = async (): Promise<{{RESOURCE_NAME}}Data> => {
+  // Implement fetch logic
+  const response = await fetch('/api/{{RESOURCE_NAME_LOWER}}');
+  return response.json();
+};
+
+export const {{RESOURCE_NAME_LOWER}} = createResource(fetch{{RESOURCE_NAME}});

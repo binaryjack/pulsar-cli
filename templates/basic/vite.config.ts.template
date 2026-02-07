@@ -1,0 +1,14 @@
+import { defineConfig } from 'vite';
+import { pulsarPlugin } from '@pulsar-framework/vite-plugin';
+
+export default defineConfig({
+  plugins: [pulsarPlugin()],
+  esbuild: {
+    jsxFactory: 'h',
+    jsxFragment: 'Fragment',
+    jsxInject: `import { h, Fragment } from '@pulsar-framework/pulsar.dev'`
+  },
+  optimizeDeps: {
+    include: ['@pulsar-framework/pulsar.dev']
+  }
+});

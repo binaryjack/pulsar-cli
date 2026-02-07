@@ -1,0 +1,20 @@
+import { createSignal, useAppContext } from '@pulsar-framework/pulsar.dev';
+
+export const App = function App() {
+  const context = useAppContext();
+  const [count, setCount] = createSignal(0);
+
+  return (
+    <div style={{ padding: '2rem', fontFamily: 'system-ui' }}>
+      <h1>Welcome to {context.appName}</h1>
+      <p>
+        <button onClick={() => setCount(count() + 1)}>
+          Count: {count()}
+        </button>
+      </p>
+      <p style={{ color: '#666', fontSize: '0.875rem' }}>
+        Version: {context.version} | Edit <code>src/App.tsx</code> and save to test HMR
+      </p>
+    </div>
+  );
+};

@@ -1,0 +1,10 @@
+import { createSignal } from '@pulsar-framework/pulsar.dev';
+
+export const {{COMPONENT_NAME}} = function {{COMPONENT_NAME}}() {
+  return (
+    <div>
+      <h2>{{COMPONENT_NAME}}</h2>
+      <p>{{COMPONENT_NAME}} component</p>
+    </div>
+  );
+};

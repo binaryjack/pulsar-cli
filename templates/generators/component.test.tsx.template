@@ -1,0 +1,9 @@
+import { describe, it, expect } from 'vitest';
+import { {{COMPONENT_NAME}} } from './{{COMPONENT_FILE}}';
+
+describe('{{COMPONENT_NAME}}', () => {
+  it('should render', () => {
+    // Add tests here
+    expect(true).toBe(true);
+  });
+});

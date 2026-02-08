@@ -1,0 +1,5 @@
+[?25l[2J[m[2;1H> @pulsar-framework/cli@0.8.0-alpha test E:\Sources\visual-schema-builder\packages\pulsar-cli
+> vitest[6;1H]0;C:\WINDOWS\system32\cmd.exe[?25h'vitest' is not recognized as an internal or external command,
+operable program or batch file.
+[30m[41m ELIFECYCLE [m [31mTest failed. See above for more details.[30m[43m
+ WARN [m  Local package.json exists, but node_modules missing, did you mean to install?

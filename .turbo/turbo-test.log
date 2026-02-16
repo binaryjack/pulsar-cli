@@ -1,5 +1,26 @@
-[?25l[2J[m[2;1H> @pulsar-framework/cli@0.8.0-alpha test E:\Sources\visual-schema-builder\packages\pulsar-cli
-> vitest[6;1H]0;C:\WINDOWS\system32\cmd.exe[?25h'vitest' is not recognized as an internal or external command,
-operable program or batch file.
-[30m[41m ELIFECYCLE [m [31mTest failed. See above for more details.[30m[43m
- WARN [m  Local package.json exists, but node_modules missing, did you mean to install?
+
+> @pulsar-framework/cli@0.8.0-alpha test E:\Sources\visual-schema-builder\packages\pulsar-cli
+> vitest
+
+▲ [WARNING] Duplicate key "skipLibCheck" in object literal [duplicate-object-key]
+
+    ../pulsar-vite-plugin/tsconfig.json:17:4:
+      17 │     "skipLibCheck": true
+         ╵     ~~~~~~~~~~~~~~
+
+  The original key "skipLibCheck" is here:
+
+    ../pulsar-vite-plugin/tsconfig.json:14:4:
+      14 │     "skipLibCheck": true,
+         ╵     ~~~~~~~~~~~~~~
+
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+
+[7m[1m[34m DEV [39m[22m[27m [34mv1.6.1[39m [90mE:/Sources/visual-schema-builder/packages/pulsar-cli/packages/demo[39m
+
+[2minclude: [22m[33m**/*.{test,spec}.?(c|m)[jt]s?(x)[39m
+[2mexclude:  [22m[33m**/node_modules/**[2m, [22m**/dist/**[2m, [22m**/cypress/**[2m, [22m**/.{idea,git,cache,output,temp}/**[2m, [22m**/{karma,rollup,webpack,vite,vitest,jest,ava,babel,nyc,cypress,tsup,build,eslint,prettier}.config.*[39m
+[2mwatch exclude:  [22m[33m**/node_modules/**[2m, [22m**/dist/**[39m
+[31m
+No test files found, exiting with code 1[39m
+ ELIFECYCLE  Test failed. See above for more details.

@@ -1,1 +1,0 @@
-{"version":3,"file":"register-command.js","sourceRoot":"","sources":["../../src/prototype/register-command.ts"],"names":[],"mappings":"AAAA;;GAEG;AAKH;;GAEG;AACH,MAAM,UAAU,eAAe,CAAa,OAAiB;IAC3D,MAAM,QAAQ,GAAG,IAAoB,CAAC;IAEtC,uBAAuB;IACvB,QAAQ,CAAC,SAAS,CAAC,IAAI,CAAC,OAAO,CAAC,CAAC;IAEjC,0BAA0B;IAC1B,OAAO,CAAC,QAAQ,CAAC,QAAQ,CAAC,QAAQ,CAAC,CAAC;AACtC,CAAC"}

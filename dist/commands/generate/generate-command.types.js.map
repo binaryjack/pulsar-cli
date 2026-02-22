@@ -1,1 +1,0 @@
-{"version":3,"file":"generate-command.types.js","sourceRoot":"","sources":["../../../src/commands/generate/generate-command.types.ts"],"names":[],"mappings":"AAAA;;GAEG;AAEH;;GAEG;AACH,MAAM,CAAC,MAAM,aAAa,GAAG;IAC3B,SAAS,EAAE,WAAW;IACtB,KAAK,EAAE,OAAO;IACd,QAAQ,EAAE,UAAU;IACpB,KAAK,EAAE,OAAO;IACd,IAAI,EAAE,MAAM;IACZ,OAAO,EAAE,SAAS;CACV,CAAC"}
